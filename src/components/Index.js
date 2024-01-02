@@ -3,13 +3,13 @@ import './main.js';
 import '../css/bootstrap.min.css'
 import '../css/style.css';
 import Dropdown from 'react-bootstrap/Dropdown';
-import DropdownButton from 'react-bootstrap/DropdownButton';
 //import 'bootstrap/dist/css/bootstrap.min.css';
 import 'owl.carousel/dist/assets/owl.carousel.min.css';
 
-import {Nav ,NavDropdown,Navbar} from 'react-bootstrap';
-import {LinkContainer} from 'react-router-bootstrap';
+// import {Nav ,NavDropdown,Navbar} from 'react-bootstrap';
+// import {LinkContainer} from 'react-router-bootstrap';
 //import '../scss/bootstrap.scss';
+import { Link } from 'react-router-dom';
 import user from '../img/user.jpg';
 import FullCalendar from '@fullcalendar/react';
 import dayGridPlugin from '@fullcalendar/daygrid';
@@ -209,20 +209,20 @@ function Index() {
   return (
     <div class="container-xxl position-relative bg-white d-flex p-0">
         {/* <!-- Spinner Start --> */}
-        {/* <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-            <div class="spinner-border text-primary" style={customStylespinner} role="status">
+         {/* <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style={customStylespinner}>
                 <span class="sr-only">Loading...</span>
             </div>
-        </div>  */}
+        </div>   */}
         {/* <!-- Spinner End -->
 
 
         <!-- Sidebar Start --> */}
         <div class="sidebar pe-4 pb-3">
             <nav class="navbar bg-light navbar-light">
-                <a href="index.html" class="navbar-brand mx-4 mb-3">
+                <Link to="/" class="navbar-brand mx-4 mb-3">
                     <h3 class="text-primary"><i class="fa fa-hashtag me-2"></i>DASHMIN</h3>
-                </a>
+                </Link>
                 <div class="d-flex align-items-center ms-4 mb-4">
                     <div class="position-relative">
                         <img className="rounded-circle" src={user} alt="" style={customStyle} />
@@ -268,9 +268,10 @@ function Index() {
       </Dropdown.Toggle></div>
 
       <Dropdown.Menu className="dropdown-menu bg-transparent border-0">
-        <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-        <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-        <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+        <Dropdown.Item><Link to="/signin">Sign In</Link></Dropdown.Item>
+        <Dropdown.Item><Link to="/signup">Sign Up</Link></Dropdown.Item>
+        <Dropdown.Item><Link to="/error">Error 404</Link></Dropdown.Item>
+        <Dropdown.Item><Link to="/blank">Blank Page</Link></Dropdown.Item>
       </Dropdown.Menu>
     </Dropdown></div>
   
