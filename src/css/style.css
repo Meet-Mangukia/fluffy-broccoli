@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css');
 @import url('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.39.0/css/tempusdominus-bootstrap-4.min.css');
 /* @import url('https://code.jquery.com/jquery-3.4.1.min.js');
 @import url('https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js'); */
 
@@ -94,6 +95,76 @@
     transition: 0.5s;
 }
 
+
+
+
+#mydiv > .btn-default {
+    background:transparent;
+  }
+
+#mydiv .dropdown-toggle.btn-default {
+    color: black; /* Set your desired text color */
+    background-color: transparent; /* Set a transparent background */
+    border: none; /* Remove border */
+  }
+  
+#mydiv .dropdown-toggle.btn-default:hover {
+    color: #009CFF; /* Set your desired text color for hover state */
+    background-color: transparent; /* Set a transparent background for hover state */
+  }
+
+
+#mydiv:hover .dropdown-toggle {
+    color: #009CFF !important;
+  }
+  
+#mydiv:hover .dropdown-toggle i {
+    color: #009CFF !important;
+  }
+
+#mydiv .dropdown-menu a:hover {
+    color: #009CFF;
+  }
+
+  #mydiv .dropdown-menu {
+    max-height: 200px; /* Set your preferred max-height */
+    overflow-y: auto;
+    font-weight: bold /* Enable vertical scroll if the content exceeds the max-height */
+  }
+
+#mydiv .btn-default.dropdown-toggle {
+    background-image: none !important;
+  }
+
+  #mydiv .btn-default.dropdown-toggle::after {
+    content: none !important;
+  }
+
+  .move-downwards {
+    transition: margin-top 0.3s ease; /* Add a smooth transition effect */
+  }
+  
+  #mydiv .dropdown-menu {
+    max-height: 200px; /* Set your preferred max-height */
+    overflow-y: auto; /* Enable vertical scroll if the content exceeds the max-height */
+  }
+  #mydiv .btn-default.dropdown-toggle + .dropdown-menu {
+    position: absolute;
+    top: 100%; /* Position the dropdown below the button */
+    left: 0;
+    right: 0;
+  }
+#mydiv .show>.btn-default.dropdown-toggle::after {
+    content: none !important;
+    border-color: transparent !important;
+  }
+  
+  /* Remove the black border for the focus state */
+#mydiv .btn-default.dropdown-toggle:focus {
+    content: '\00a0';
+
+    box-shadow: none !important;
+  }
 @media (min-width: 992px) {
     .sidebar {
         margin-left: 0;
