@@ -6,6 +6,7 @@ import Signin from './components/Signin';
 import Signup from './components/Signup';
 import Error from './components/Error';
 import Blankpage from './components/Blankpage';
+import DetailPage from './components/DetailPage';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
      <Route path="/signup" element={<Signup></Signup>}  />
      <Route path="/error" element={<Error></Error>}  />
      <Route path="/blank" element={<Blankpage></Blankpage>}  />
+     <Route path="/Detail" element={<DetailPage></DetailPage>}  />
     </Routes>
      
    

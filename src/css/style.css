@@ -126,6 +126,11 @@
     color: #009CFF;
   }
 
+
+  .new-line-heading {
+    clear: both;
+  }
+
   #mydiv .dropdown-menu {
     max-height: 200px; /* Set your preferred max-height */
     overflow-y: auto;

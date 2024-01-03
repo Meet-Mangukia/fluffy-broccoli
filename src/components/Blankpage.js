@@ -1,10 +1,12 @@
 import React,{useEffect,useState} from 'react'
 import './main.js';
+import sample from '../img/sample.jpg';
 import '../css/bootstrap.min.css'
 import '../css/style.css';
 import Dropdown from 'react-bootstrap/Dropdown';
 //import 'bootstrap/dist/css/bootstrap.min.css';
 import 'owl.carousel/dist/assets/owl.carousel.min.css';
+import Card from 'react-bootstrap/Card';
 
 // import {Nav ,NavDropdown,Navbar} from 'react-bootstrap';
 // import {LinkContainer} from 'react-router-bootstrap';
@@ -176,9 +178,13 @@ function Blankpage() {
     height: "40 px"
   };
 
-  const customStylespinner = {
-    width: "3rem",
-    height: "3rem"
+  const customCard = {
+    width: "500rem",
+    height: "5rem"
+  };
+
+  const titleStyle = {
+    textAlign: 'left',
   };
 
   useEffect(() => {
@@ -379,11 +385,83 @@ function Blankpage() {
 
  {/* <!-- Blank --> */}
  <div class="container-fluid pt-4 px-4">
-                <div class="row vh-100 bg-light rounded align-items-center justify-content-center mx-0">
-                    <div class="col-md-6 text-center">
-                        <h3>This is blank page</h3>
+    <div class="row g-4">
+ <div class="col-sm-12 col-lg-5" >
+    <div class="row g-4">
+        <Link to="/detail">
+                        <div class="bg-light text-center rounded p-4" style={{ height: '185px' }}>
+                            <div class="d-flex align-items-center justify-content-between">
+                                {/* Card */}
+                                
+                                <Card style={customCard}>
+      <Card.Img  src={sample}  style={{ height: '100px', borderBottom: '1px solid #ccc' }}/>
+      <Card.Body>
+        <Card.Title style={titleStyle}>Programming In c++</Card.Title>
+        {/* <Card.Text>
+        Introduction to c programming
+        </Card.Text> */}
+       
+      </Card.Body>
+    </Card> 
+                                {/* Card Ends */}
+
+
+                                
+
+                            </div>
+                           
+                            {/* <canvas id="salse-revenue"></canvas> */}
+                        </div></Link>
+                        </div>
+
+{/*  */}
+
+{/*  */}
+
+
+
+
                     </div>
-                </div>
+
+
+
+                    <div class="col-sm-12 col-lg-5" >
+                        <div class="bg-light text-center rounded p-4" style={{ height: '185px' }}>
+                            <div class="d-flex align-items-center justify-content-between">
+                                {/* Card */}
+                                <Card style={customCard}>
+      <Card.Img  src={sample}  style={{ height: '100px', borderBottom: '1px solid #ccc' }}/>
+      <Card.Body>
+        <Card.Title style={titleStyle}>Programming In c++</Card.Title>
+        {/* <Card.Text>
+        Introduction to c programming
+        </Card.Text> */}
+       
+      </Card.Body>
+    </Card> 
+                                {/* Card Ends */}
+
+
+                                
+
+                            </div>
+                           
+                            {/* <canvas id="salse-revenue"></canvas> */}
+                        </div>
+
+{/*  */}
+
+{/*  */}
+
+
+
+
+                    </div>
+
+
+
+
+                    </div>
             </div>
            
             {/* <!-- Blank --> */}
