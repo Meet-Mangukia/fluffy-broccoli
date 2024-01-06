@@ -66,83 +66,27 @@ function DetailPage() {
  
 
   return (
-    <div className="container-xxl position-relative bg-white d-flex p-0">
+    <div className="position-relative bg-white d-flex p-0" >
         {/* <!-- Spinner Start --> */}
         {/* <div id="spinner" className="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
             <div className="spinner-border text-primary" style={customStylespinner} role="status">
                 <span className="sr-only">Loading...</span>
             </div>
         </div>  */}
-        {/* <!-- Spinner End -->
+        {/* <!-- Spinner End --> */}
 
 
-        <!-- Sidebar Start --> */}
-         <div className="sidebar pe-4 pb-3">
-            <nav className="navbar bg-light navbar-light">
-                <Link to="/" className="navbar-brand mx-4 mb-3">
-                    <h3 className="text-primary"><i className="fa fa-hashtag me-2"></i>DASHMIN</h3>
-                </Link>
-                <div className="d-flex align-items-center ms-4 mb-4">
-                    <div className="position-relative">
-                        <img className="rounded-circle" src={user} alt="" style={customStyle} />
-                        <div className="bg-success rounded-circle border border-2 border-white position-absolute end-0 bottom-0 p-1"></div>
-                    </div>
-                    <div className="ms-3">
-                        <h6 className="mb-0">Jhon Doe</h6>
-                        <span>Admin</span>
-                    </div>
-                </div>
-                <div className="navbar-nav w-100">
-                    <a href="index.html" className="nav-item nav-link active"><i className="fa fa-tachometer-alt me-2"></i>Dashboard</a>
-                    
-
-                    {/* Dropdown starts */}
-                    <div className="nav-item dropdown">
-                        <a href="#" className="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i className="fa fa-laptop me-2"></i>Elements</a>
-                        <div className="dropdown-menu bg-transparent border-0">
-                            <a href="button.html" className="dropdown-item">Buttons</a>
-                            <a href="typography.html" className="dropdown-item">Typography</a>
-                            <a href="element.html" className="dropdown-item">Other Elements</a>
-                        </div>
-                    </div>
-                    {/* Dropdown ends */}
-                    <a href="widget.html" className="nav-item nav-link"><i className="fa fa-th me-2"></i>Widgets</a>
-                    <a href="form.html" className="nav-item nav-link"><i className="fa fa-keyboard me-2"></i>Forms</a>
-                    <a href="table.html" className="nav-item nav-link"><i className="fa fa-table me-2"></i>Tables</a>
-                    <a href="chart.html" className="nav-item nav-link"><i className="fa fa-chart-bar me-2"></i>Charts</a>
-                    
+        
 
 
-                    {/* dropdown */}
-                    <div className="nav-item dropdown">
-                        <a href="#" className="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i className="far fa-file-alt me-2"></i>Pages</a>
-                        <div className="dropdown-menu bg-transparent border-0">
-                            <Link to="/signin" className="dropdown-item">Sign In</Link>
-                            <Link to="/signup" className="dropdown-item">Sign Up</Link>
-                            <Link to="/error" className="dropdown-item">404 Error</Link>
-                            <Link to="/blank" className="dropdown-item">Blank Page</Link>
-                        </div>
-                    </div>
-  
-                    {/* dropdown ends */}
-
-                    
-                </div>
-            </nav>
-        </div>
-        {/* <!-- Sidebar End -->
-
-
-        <!-- Content Start --> */}
+        {/* <!-- Content Start -->  */}
         <div className="content">
             {/* <!-- Navbar Start --> */}
-            <nav className="navbar navbar-expand bg-light navbar-light sticky-top px-4 py-0">
+            <nav className="navbar navbar-expand bg-light navbar-light sticky-top px-4 py-0" style={{ maxWidth: '1000px' }}>
                 <a href="index.html" className="navbar-brand d-flex d-lg-none me-4">
                     <h2 className="text-primary mb-0"><i className="fa fa-hashtag"></i></h2>
                 </a>
-                <a href="#" className="sidebar-toggler flex-shrink-0">
-                    <i className="fa fa-bars"></i>
-                </a>
+             
                 <form className="d-none d-md-flex ms-4">
                     <input className="form-control border-0" type="search" placeholder="Search" />
                 </form>
@@ -234,13 +178,18 @@ function DetailPage() {
 
 
             {/* <!-- Recent Sales Start -->  */}
-            <div className="container-fluid pt-4 px-4">
-                <div className="bg-light text-center rounded p-4">
+            {/* url start */}
+            <div className="container-fluid pt-4 px-0">
+                <div className="bg-light text-center rounded p-4" style={{ maxWidth: '1000px' }}>
                     <div className="d-flex align-items-center justify-content-between mb-2">
-                        <h3>Subject Name</h3>
                     </div>
-                    <div className="d-flex align-items-center justify-content-between mb-0">
-                        <h6 >Subject Code</h6>
+                </div>
+            </div>
+            {/* url end */}
+            <div className="container-fluid pt-3 px-0 ">
+                <div className="bg-light text-center align-items-center justify-content-between rounded p-2" style={{ maxWidth: '1000px' }}>
+                    <div className="d-flex align-items-center justify-content-between mb-1">
+                        <h3>Subject Name</h3>
                     </div>
                 </div>
             </div>
@@ -254,9 +203,9 @@ function DetailPage() {
 
  {/* <!-- Typography Start --> */}
 
- <div className="container-fluid pt-2 px-4">
-                <div className="row g-4">
-                    <div className="col-sm-12 col-md-6 col-xl-3">
+ <div className="container-fluid pt-2 px-0" >
+                <div className="row g-4" style={{ maxWidth: '1025px' }}>
+                    <div className="col-sm-12 col-md-6 col-xl-3" >
                         <div className="h-100 bg-light rounded p-4">
                             <div className="d-flex align-items-center justify-content-between mb-2">
                             </div>

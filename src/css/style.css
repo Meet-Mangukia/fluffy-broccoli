@@ -295,7 +295,7 @@
 .content .navbar .dropdown-toggle::after {
    
     font-family: "Font Awesome 5 Free";
-    content: "\f107";
+    /* content: "\f107"; */
     font-weight: 800;
     transition: .5s;
 }
