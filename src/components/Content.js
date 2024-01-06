@@ -3,27 +3,25 @@ import './main.js';
 import sample from '../img/sample.jpg';
 import '../css/bootstrap.min.css'
 import '../css/style.css';
-import Dropdown from 'react-bootstrap/Dropdown';
 //import 'bootstrap/dist/css/bootstrap.min.css';
-//import 'owl.carousel/dist/assets/owl.carousel.min.css';
-import Card from 'react-bootstrap/Card';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
-// import {Nav ,NavDropdown,Navbar} from 'react-bootstrap';
-// import {LinkContainer} from 'react-router-bootstrap';
-//import '../scss/bootstrap.scss';
+
+
+
+
+
 import { Link } from 'react-router-dom';
 import user from '../img/user.jpg';
-import FullCalendar from '@fullcalendar/react';
-import dayGridPlugin from '@fullcalendar/daygrid';
-import timeGridPlugin from '@fullcalendar/timegrid'
-import CanvasJSReact from '@canvasjs/react-charts';
-//import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 
-var CanvasJSChart = CanvasJSReact.CanvasJSChart;
+
+function Content() {
 
 
-function DetailPage() {
+
+
+    
 
   
 
@@ -33,9 +31,6 @@ function DetailPage() {
     height: "40 px"
   };
 
- const listGroup={
-    borderBottom:'none'
- };
 
 
 
@@ -77,7 +72,7 @@ function DetailPage() {
 
 
         <!-- Sidebar Start --> */}
-         <div className="sidebar pe-4 pb-3">
+        <div className="sidebar pe-4 pb-3">
             <nav className="navbar bg-light navbar-light">
                 <Link to="/" className="navbar-brand mx-4 mb-3">
                     <h3 className="text-primary"><i className="fa fa-hashtag me-2"></i>DASHMIN</h3>
@@ -140,7 +135,7 @@ function DetailPage() {
                 <a href="index.html" className="navbar-brand d-flex d-lg-none me-4">
                     <h2 className="text-primary mb-0"><i className="fa fa-hashtag"></i></h2>
                 </a>
-                <a href="#" className="sidebar-toggler flex-shrink-0">
+                <a href="#" className="sidebar-toggler flex-shrink-0" style={{ textDecoration: 'none',  transition: 'color 0.3s' }}>
                     <i className="fa fa-bars"></i>
                 </a>
                 <form className="d-none d-md-flex ms-4">
@@ -256,7 +251,7 @@ function DetailPage() {
 
  <div className="container-fluid pt-2 px-4">
                 <div className="row g-4">
-                    <div className="col-sm-12 col-md-6 col-xl-3">
+                <div className="col-sm-12 col-md-6 col-xl-3">
                         <div className="h-100 bg-light rounded p-4">
                             <div className="d-flex align-items-center justify-content-between mb-2">
                             </div>
@@ -300,12 +295,94 @@ function DetailPage() {
                         </div>
                     </div>
                     <div className="col-sm-12 col-md-6 col-xl-9">
-                        <div className="h-100 bg-light rounded p-4">
-                            <div className="d-flex align-items-center justify-content-between mb-2">
-                                <h6 className="mb-0">Announcement</h6>
+                        <div className="h-45 bg-light rounded p-4 mb-n3">
+                            <div className="d-flex justify-content-center m-n2">
+                                <Link to='/' style={{ textDecoration: 'none', transition: 'color 0.3s' }}><div className="me-2">
+                                   <button type="button" className="btn btn-lg btn-lg-square btn-primary m-2">
+                                     <i className="fa fa-file"></i>
+                                   </button>
+                                       <p className="text-center mb-0">Course Outline</p>
+                                </div></Link>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <Link to='/' style={{ textDecoration: 'none', transition: 'color 0.3s' }}><div className="me-2">
+                                   <button type="button" className="btn btn-lg btn-lg-square btn-primary m-2">
+                                     <i className="fa fa-search"></i>
+                                   </button>
+                                       <p className="text-center mb-0">Instructional Plan</p>
+                                </div></Link>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <Link to='/' style={{ textDecoration: 'none', transition: 'color 0.3s' }}><div>
+                                   <button type="button" className="btn btn-lg btn-lg-square btn-primary m-2">
+                                       <i className="fa fa-book"></i>
+                                   </button>
+                                        <p className="text-center mb-0">Textbook</p>
+                                </div></Link>
                             </div>
+                           
+
+                            
+                        </div><br></br>
+                        <div className="col-sm-12 col-md-3 col-xl-12">
+                        <div className="h-100 bg-light rounded p-4">
+                            {/* accor start */}
+                                <div className="container" >
+                                    <div className="accordion accordion-flush" id="accordionExample">
+                                    <div className="accordion-item" >
+                                      <h2 className="accordion-header">
+                                        <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                          <strong>Week 1</strong>
+                                        </button>
+                                      </h2>
+                                      <div id="collapseOne" className="accordion-collapse collapse show"  data-bs-parent="#accordionExample">
+                                        <div className="accordion-body" >
+                                          <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div className="accordion-item" >
+                                      <h2 className="accordion-header" >
+                                        <button className="accordion-button collapsed" type="button"  data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                         <strong>Week 2</strong>
+                                        </button>
+                                      </h2>
+                                      <div id="collapseTwo" className="accordion-collapse collapse"  data-bs-parent="#accordionExample">
+                                        <div className="accordion-body" >
+                                          <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div className="accordion-item" >
+                                      <h2 className="accordion-header" >
+                                        <button className="accordion-button collapsed" type="button"  data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                          <strong>Week 3</strong>
+                                        </button>
+                                      </h2>
+                                      <div id="collapseThree" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                        <div className="accordion-body">
+                                          <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div className="accordion-item" >
+                                      <h2 className="accordion-header" >
+                                        <button className="accordion-button collapsed" type="button"  data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                          <strong>Week 4</strong>
+                                        </button>
+                                      </h2>
+                                      <div id="collapseFour" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                        <div className="accordion-body">
+                                          <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  
+                                </div>
+                            {/* accor ends */}
                         </div>
-                    </div>
+                        </div>
+                    
+                
+                </div>         
+                
                     
                 </div>
             </div>
@@ -348,4 +425,4 @@ function DetailPage() {
   )
 }
 
-export default DetailPage
+export default Content
