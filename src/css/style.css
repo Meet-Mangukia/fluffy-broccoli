@@ -88,12 +88,83 @@
 }
 
 .content {
-    margin-left: 250px;
+    /***text-align: 250px;***/
     min-height: 100vh;
     background: #FFFFFF;
     transition: 0.5s;
+    margin: auto;
 }
 
+<<<<<<< Updated upstream
+=======
+#mydiv > .btn-default {
+    background:transparent;
+  }
+
+#mydiv .dropdown-toggle.btn-default {
+    color: black; /* Set your desired text color */
+    background-color: transparent; /* Set a transparent background */
+    border: none; /* Remove border */
+  }
+  
+#mydiv .dropdown-toggle.btn-default:hover {
+    color: #009CFF; /* Set your desired text color for hover state */
+    background-color: transparent; /* Set a transparent background for hover state */
+  }
+
+
+#mydiv:hover .dropdown-toggle {
+    color: #009CFF !important;
+  }
+  
+#mydiv:hover .dropdown-toggle i {
+    color: #009CFF !important;
+  }
+
+#mydiv .dropdown-menu a:hover {
+    color: #009CFF;
+  }
+
+  #mydiv .dropdown-menu {
+    max-height: 200px; /* Set your preferred max-height */
+    overflow-y: auto;
+    font-weight: bold /* Enable vertical scroll if the content exceeds the max-height */
+  }
+
+#mydiv .btn-default.dropdown-toggle {
+    background-image: none !important;
+  }
+
+  #mydiv .btn-default.dropdown-toggle::after {
+    content: none !important;
+  }
+
+  .move-downwards {
+    transition: margin-top 0.3s ease; /* Add a smooth transition effect */
+  }
+  
+  #mydiv .dropdown-menu {
+    max-height: 200px; /* Set your preferred max-height */
+    overflow-y: auto; /* Enable vertical scroll if the content exceeds the max-height */
+  }
+  #mydiv .btn-default.dropdown-toggle + .dropdown-menu {
+    position: absolute;
+    top: 100%; /* Position the dropdown below the button */
+    left: 0;
+    right: 0;
+  }
+#mydiv .show>.btn-default.dropdown-toggle::after {
+    content: none !important;
+    border-color: transparent !important;
+  }
+  
+  /* Remove the black border for the focus state */
+#mydiv .btn-default.dropdown-toggle:focus {
+    content: '\00a0';
+
+    box-shadow: none !important;
+  }
+>>>>>>> Stashed changes
 @media (min-width: 992px) {
     .sidebar {
         margin-left: 0;
