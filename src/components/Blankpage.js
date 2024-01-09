@@ -18,6 +18,7 @@ import dayGridPlugin from '@fullcalendar/daygrid';
 import timeGridPlugin from '@fullcalendar/timegrid'
 import CanvasJSReact from '@canvasjs/react-charts';
 //import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+//import '@fortawesome/fontawesome-free/css/fontawesome.min.css';
 
 
 var CanvasJSChart = CanvasJSReact.CanvasJSChart;

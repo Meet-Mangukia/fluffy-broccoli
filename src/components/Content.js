@@ -177,7 +177,7 @@ function Content() {
             <div className="container-fluid pt-4 px-0 ">
                 <div className="bg-light text-center rounded p-4" style={{ maxWidth: '1000px' }}>
                     <div className="d-flex align-items-center justify mb-n2">
-                    <Link to="/">Home</Link>&nbsp;<i class="fa fa-chevron-right"></i>&nbsp;<Link to="/detail">Subject Name</Link>&nbsp;<i class="fa fa-chevron-right"></i> &nbsp;<Link to='/coursecontent'>Course Content</Link>
+                    <Link to="/">Home</Link>&nbsp;<i className="fa fa-chevron-right"></i>&nbsp;<Link to="/detail">Subject Name</Link>&nbsp;<i className="fa fa-chevron-right"></i> &nbsp;<Link to='/coursecontent'>Course Content</Link>
 
                     </div>
                 </div>
@@ -206,28 +206,28 @@ function Content() {
                         <div className="h-100 bg-light rounded p-4">
                             <div className="d-flex align-items-center justify-content-between mb-2">
                             </div>
-                            <div className="d-flex align-items-center border-bottom py-3">
+                            <div className="d-flex align-items-center py-3">
                                 <div className="w-100 ms-3">
                                     <div className="d-flex w-100 justify-content-between">
                                         <Link to='/detail' style={{ textDecoration: 'none', color: 'black', transition: 'color 0.3s' }}><h6 style={{ color: '#009CFF' }} className="mb-0">Home</h6></Link>
                                     </div>
                                 </div>
                             </div>
-                            <div className="d-flex align-items-center border-bottom py-3">
+                            <div className="d-flex align-items-center py-3">
                                 <div className="w-100 ms-3">
                                     <div className="d-flex w-100 justify-content-between">
                                         <Link to='/coursecontent' style={{ textDecoration: 'none', color: 'black', transition: 'color 0.3s' }}><h6 style={{ color: '#009CFF' }} className="mb-0">Course Content</h6></Link>
                                     </div>
                                 </div>
                             </div>
-                            <div className="d-flex align-items-center border-bottom py-3">
+                            <div className="d-flex align-items-center py-3">
                                 <div className="w-100 ms-3">
                                     <div className="d-flex w-100 justify-content-between">
                                         <Link to='/assignment' style={{ textDecoration: 'none', color: 'black', transition: 'color 0.3s' }}><h6 style={{ color: '#009CFF' }} className="mb-0">Assignent Submission</h6></Link>
                                     </div>
                                 </div>
                             </div>
-                            <div className="d-flex align-items-center border-bottom py-3">
+                            <div className="d-flex align-items-center py-3">
                                 <div className="w-100 ms-3">
                                     <div className="d-flex w-100 justify-content-between">
                                         <Link to='/grades' style={{ textDecoration: 'none', color: 'black', transition: 'color 0.3s' }}><h6 style={{ color: '#009CFF' }} className="mb-0">Grades</h6></Link>
