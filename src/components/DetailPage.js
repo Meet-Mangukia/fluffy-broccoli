@@ -23,33 +23,26 @@ import CanvasJSReact from '@canvasjs/react-charts';
 var CanvasJSChart = CanvasJSReact.CanvasJSChart;
 
 
-function Blankpage() {
+function DetailPage() {
 
+  
 
-
-    
-
-
-
-
-
+  
   const customStyle = {
     width: "40 px",
     height: "40 px"
   };
 
-  const customCard = {
-    width: "500rem",
-    height: "5rem"
-  };
+ const listGroup={
+    borderBottom:'none'
+ };
 
-  const titleStyle = {
-    textAlign: 'left',
-  };
 
-  useEffect(() => {
+
+
+ useEffect(() => {
     // Your code that depends on main.js can go here
-    document.title = 'Home';
+    document.title = 'Subject Name';
   }, []);
 
 
@@ -74,18 +67,17 @@ function Blankpage() {
  
 
   return (
-    <div className="position-relative bg-white d-flex p-0 align-items-center">
+    <div className="position-relative bg-white d-flex p-0 align-items-center" >
         {/* <!-- Spinner Start --> */}
         {/* <div id="spinner" className="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
             <div className="spinner-border text-primary" style={customStylespinner} role="status">
                 <span className="sr-only">Loading...</span>
             </div>
         </div>  */}
-        {/* <!-- Spinner End -->
+        {/* <!-- Spinner End --> */}
 
 
-        <!-- Sidebar Start --> */}
-     
+        
 
 
         {/* <!-- Content Start -->  */}
@@ -95,7 +87,7 @@ function Blankpage() {
                 <a href="index.html" className="navbar-brand d-flex d-lg-none me-4">
                     <h2 className="text-primary mb-0"><i className="fa fa-hashtag"></i></h2>
                 </a>
-                
+             
                 <form className="d-none d-md-flex ms-4">
                     <input className="form-control border-0" type="search" placeholder="Search" />
                 </form>
@@ -181,63 +173,98 @@ function Blankpage() {
 
  {/* <!-- Blank --> */}
 
- {/* url start */}
- <div className="container-fluid pt-4 px-0">
+
+
+   
+
+
+            {/* <!-- Recent Sales Start -->  */}
+            {/* url start */}
+            <div className="container-fluid pt-4 px-0">
                 <div className="bg-light text-center rounded p-4" style={{ maxWidth: '1000px' }}>
-                    <div className="d-flex align-items-center justify-content-between mb-n2">
-                        <Link to="/">Home</Link>
+                    <div className="d-flex align-items-center justify-content mb-n2">
+                    <Link to="/">Home</Link>&nbsp;<i class="fa fa-chevron-right"></i>&nbsp;<Link to="/detail">Subject Name</Link>
                     </div>
                 </div>
             </div>
             {/* url end */}
- <div className="container-fluid pt-4 px-0" >
-    <div className="row g-4" style={{ maxWidth: '1000px' }}>
- <div className="col-sm-12 col-lg-5">
-    <div className="row g-4">
-        <Link to="/detail" style={{ textDecoration: 'none',  transition: 'color 0.3s' }}>
-                        <div className="bg-light text-center rounded p-4" style={{ height: '430px' }}>
-                            <div className="d-flex align-items-center justify-content-between">
-                                {/* Card */}
-                                
-                                <Card style={customCard}>
-      <Card.Img  src={sample}  />
-      <Card.Body>
-        <Card.Title style={titleStyle}>Programming In c++</Card.Title>
-        {/* <Card.Text>
-        Introduction to c programming
-        </Card.Text> */}
-       
-      </Card.Body>
-    </Card> 
-                                {/* Card Ends */}
-
-
-                                
-
-                            </div>
-                           
-                            {/* <canvas id="salse-revenue"></canvas> */}
-                        </div></Link>
-                        </div>
-
-{/*  */}
-
-{/*  */}
-
-
-
-
+            <div className="container-fluid pt-3 px-0 ">
+                <div className="bg-light text-center align-items-center justify-content-between rounded p-2 " style={{ maxWidth: '1000px' }}>
+                    <div className="d-flex align-items-center justify-content-between mb-1">
+                        <h3>Subject Name</h3>
                     </div>
-
-
-
-                    
-
-
-
-
-                    </div>
+                </div>
             </div>
+            {/* <!-- Recent Sales End --> */}
+
+
+
+
+ 
+
+
+ {/* <!-- Typography Start --> */}
+
+ <div className="container-fluid pt-2 px-0 " >
+                <div className="row g-4" style={{ maxWidth: '1025px' }}>
+                    <div className="col-sm-12 col-md-6 col-xl-3" >
+                        <div className="h-100 bg-light rounded p-4">
+                            <div className="d-flex align-items-center justify-content-between mb-2">
+                            </div>
+                            <div className="d-flex align-items-center border-bottom py-3">
+                                <div className="w-100 ms-3">
+                                    <div className="d-flex w-100 justify-content-between">
+                                        <Link to='/detail' style={{ textDecoration: 'none', color: 'black', transition: 'color 0.3s' }}><h6 style={{ color: '#009CFF' }} className="mb-0">Home</h6></Link>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="d-flex align-items-center border-bottom py-3">
+                                <div className="w-100 ms-3">
+                                    <div className="d-flex w-100 justify-content-between">
+                                        <Link to='/coursecontent' style={{ textDecoration: 'none', color: 'black', transition: 'color 0.3s' }}><h6 style={{ color: '#009CFF' }} className="mb-0">Course Content</h6></Link>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="d-flex align-items-center border-bottom py-3">
+                                <div className="w-100 ms-3">
+                                    <div className="d-flex w-100 justify-content-between">
+                                        <Link to='/assignment' style={{ textDecoration: 'none', color: 'black', transition: 'color 0.3s' }}><h6 style={{ color: '#009CFF' }} className="mb-0">Assignent Submission</h6></Link>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="d-flex align-items-center border-bottom py-3">
+                                <div className="w-100 ms-3">
+                                    <div className="d-flex w-100 justify-content-between">
+                                        <Link to='/grades' style={{ textDecoration: 'none', color: 'black', transition: 'color 0.3s' }}><h6 style={{ color: '#009CFF' }} className="mb-0">Grades</h6></Link>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="d-flex align-items-center pt-3">
+                                <div className="w-100 ms-3">
+                                    <div className="d-flex w-100 justify-content-between">
+                                    <Link to='/teacher' style={{ textDecoration: 'none', color: 'black', transition: 'color 0.3s' }}>
+                                <h6 className="mb-0" style={{ color: '#009CFF' }}>Contact Teacher</h6>
+                            </Link>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-sm-12 col-md-6 col-xl-9">
+                        <div className="h-100 bg-light rounded p-4">
+                            <div className="d-flex align-items-center justify-content-between mb-2">
+                                <h6 className="mb-0">Announcement</h6>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            {/* <!-- Typography End --> */}
+
+
+
+ 
            
             {/* <!-- Blank --> */}
 
@@ -245,8 +272,8 @@ function Blankpage() {
            
 
             {/* <!-- Footer Start --> */}
-            <div className="container-fluid pt-4 px-0">
-                <div className="bg-light rounded-top p-4" style={{ maxWidth: '1000px' }}>
+            {/* <div className="container-fluid pt-4 px-4">
+                <div className="bg-light rounded-top p-4">
                     <div className="row">
                         <div className="col-12 col-sm-6 text-center text-sm-start">
                             &copy; <a href="#">Your Site Name</a>, All Right Reserved. 
@@ -259,10 +286,8 @@ function Blankpage() {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
             {/* <!-- Footer End --> */}
-
-            
         </div>
         {/* <!-- Content End --> */}
 
@@ -274,4 +299,4 @@ function Blankpage() {
   )
 }
 
-export default Blankpage
+export default DetailPage

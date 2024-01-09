@@ -4,7 +4,7 @@ import '../css/bootstrap.min.css'
 import '../css/style.css';
 import Dropdown from 'react-bootstrap/Dropdown';
 //import 'bootstrap/dist/css/bootstrap.min.css';
-import 'owl.carousel/dist/assets/owl.carousel.min.css';
+//import 'owl.carousel/dist/assets/owl.carousel.min.css';
 
 const Signup = () => {
 
