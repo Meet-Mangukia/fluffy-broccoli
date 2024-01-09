@@ -40,10 +40,10 @@ function AssignmentSub() {
 
 
 
-  useEffect(() => {
+ useEffect(() => {
     // Your code that depends on main.js can go here
+    document.title = 'Subject Name';
   }, []);
-
 
 
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -66,7 +66,7 @@ function AssignmentSub() {
  
 
   return (
-    <div className="position-relative bg-white d-flex p-0">
+    <div className="position-relative bg-white d-flex p-0 align-items-center">
         {/* <!-- Spinner Start --> */}
         {/* <div id="spinner" className="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
             <div className="spinner-border text-primary" style={customStylespinner} role="status">
@@ -181,7 +181,8 @@ function AssignmentSub() {
             {/* url start */}
             <div className="container-fluid pt-4 px-0 ">
                 <div className="bg-light text-center rounded p-4" style={{ maxWidth: '1000px' }}>
-                    <div className="d-flex align-items-center justify-content-between mb-2">
+                    <div className="d-flex align-items-center justify-content mb-n2">
+                    <Link to="/">Home</Link>&nbsp;<i class="fa fa-chevron-right"></i>&nbsp;<Link to="/detail">Subject Name</Link>&nbsp;<i class="fa fa-chevron-right"></i> &nbsp;<Link to='/assignment'>Assignment Submission</Link>
                     </div>
                 </div>
             </div>
@@ -212,7 +213,7 @@ function AssignmentSub() {
                             <div className="d-flex align-items-center border-bottom py-3">
                                 <div className="w-100 ms-3">
                                     <div className="d-flex w-100 justify-content-between">
-                                        <Link to='/Detail' style={{ textDecoration: 'none', color: 'black', transition: 'color 0.3s' }}><h6 style={{ color: '#009CFF' }} className="mb-0">Home</h6></Link>
+                                        <Link to='/detail' style={{ textDecoration: 'none', color: 'black', transition: 'color 0.3s' }}><h6 style={{ color: '#009CFF' }} className="mb-0">Home</h6></Link>
                                     </div>
                                 </div>
                             </div>

@@ -49,6 +49,7 @@ function Blankpage() {
 
   useEffect(() => {
     // Your code that depends on main.js can go here
+    document.title = 'Home';
   }, []);
 
 
@@ -73,7 +74,7 @@ function Blankpage() {
  
 
   return (
-    <div className="position-relative bg-white d-flex p-0">
+    <div className="position-relative bg-white d-flex p-0 align-items-center">
         {/* <!-- Spinner Start --> */}
         {/* <div id="spinner" className="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
             <div className="spinner-border text-primary" style={customStylespinner} role="status">
@@ -179,17 +180,27 @@ function Blankpage() {
 
 
  {/* <!-- Blank --> */}
+
+ {/* url start */}
+ <div className="container-fluid pt-4 px-0">
+                <div className="bg-light text-center rounded p-4" style={{ maxWidth: '1000px' }}>
+                    <div className="d-flex align-items-center justify-content-between mb-n2">
+                        <Link to="/">Home</Link>
+                    </div>
+                </div>
+            </div>
+            {/* url end */}
  <div className="container-fluid pt-4 px-0" >
     <div className="row g-4" style={{ maxWidth: '1000px' }}>
  <div className="col-sm-12 col-lg-5">
     <div className="row g-4">
         <Link to="/detail" style={{ textDecoration: 'none',  transition: 'color 0.3s' }}>
-                        <div className="bg-light text-center rounded p-4" style={{ height: '185px' }}>
+                        <div className="bg-light text-center rounded p-4" style={{ height: '430px' }}>
                             <div className="d-flex align-items-center justify-content-between">
                                 {/* Card */}
                                 
                                 <Card style={customCard}>
-      <Card.Img  src={sample}  style={{ height: '100px', borderBottom: '1px solid #ccc' }}/>
+      <Card.Img  src={sample}  />
       <Card.Body>
         <Card.Title style={titleStyle}>Programming In c++</Card.Title>
         {/* <Card.Text>
@@ -250,6 +261,8 @@ function Blankpage() {
                 </div>
             </div>
             {/* <!-- Footer End --> */}
+
+            
         </div>
         {/* <!-- Content End --> */}
 

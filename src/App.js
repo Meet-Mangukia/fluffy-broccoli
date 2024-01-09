@@ -11,6 +11,7 @@ import Content from './components/Content';
 import AssignmentSub from './components/AssigmentSub';
 import Grades from './components/Grades';
 import TeacherContact from './components/TeacherContact';
+//import AnimatedFlexCards from './components/AnimatedFlexCards';
 
 function App() {
   return (
@@ -22,11 +23,12 @@ function App() {
      <Route path="/signup" element={<Signup></Signup>}  />
      <Route path="/error" element={<Error></Error>}  />
      <Route path="/" element={<Blankpage></Blankpage>}  />
-     <Route path="/Detail" element={<DetailPage></DetailPage>}  />
+     <Route path="/detail" element={<DetailPage></DetailPage>}  />
      <Route path="/coursecontent" element={<Content></Content>}  />
      <Route path="/assignment" element={<AssignmentSub></AssignmentSub>}  />
      <Route path="/grades" element={<Grades></Grades>}  />
      <Route path="/teacher" element={<TeacherContact></TeacherContact>}  />
+     
     </Routes>
      
    

@@ -298,6 +298,7 @@
     /* content: "\f107"; */
     font-weight: 800;
     transition: .5s;
+    
 }
 
 .content .navbar .dropdown-toggle[aria-expanded=true]::after {
