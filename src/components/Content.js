@@ -209,28 +209,28 @@ function Content() {
                             <div className="d-flex align-items-center py-3">
                                 <div className="w-100 ms-3">
                                     <div className="d-flex w-100 justify-content-between">
-                                        <Link to='/detail' style={{ textDecoration: 'none', color: 'black', transition: 'color 0.3s' }}><h6 style={{ color: '#009CFF' }} className="mb-0">Home</h6></Link>
+                                        <Link to='/detail' style={{ textDecoration: 'none', color: 'black', transition: 'color 0.3s' }}><h6 className="mb-0 button-sidebar">Home</h6></Link>
                                     </div>
                                 </div>
                             </div>
                             <div className="d-flex align-items-center py-3">
                                 <div className="w-100 ms-3">
                                     <div className="d-flex w-100 justify-content-between">
-                                        <Link to='/coursecontent' style={{ textDecoration: 'none', color: 'black', transition: 'color 0.3s' }}><h6 style={{ color: '#009CFF' }} className="mb-0">Course Content</h6></Link>
+                                        <Link to='/coursecontent' style={{ textDecoration: 'none', color: 'black', transition: 'color 0.3s' }}><h6 className="mb-0 button-sidebar">Course Content</h6></Link>
                                     </div>
                                 </div>
                             </div>
                             <div className="d-flex align-items-center py-3">
                                 <div className="w-100 ms-3">
                                     <div className="d-flex w-100 justify-content-between">
-                                        <Link to='/assignment' style={{ textDecoration: 'none', color: 'black', transition: 'color 0.3s' }}><h6 style={{ color: '#009CFF' }} className="mb-0">Assignent Submission</h6></Link>
+                                        <Link to='/assignment' style={{ textDecoration: 'none', color: 'black', transition: 'color 0.3s' }}><h6 className="mb-0 button-sidebar">Assignent Submission</h6></Link>
                                     </div>
                                 </div>
                             </div>
-                            <div className="d-flex align-items-center py-3">
+                            <div className="d-flex align-items-cente py-3">
                                 <div className="w-100 ms-3">
                                     <div className="d-flex w-100 justify-content-between">
-                                        <Link to='/grades' style={{ textDecoration: 'none', color: 'black', transition: 'color 0.3s' }}><h6 style={{ color: '#009CFF' }} className="mb-0">Grades</h6></Link>
+                                        <Link to='/grades' style={{ textDecoration: 'none', color: 'black', transition: 'color 0.3s' }}><h6 className="mb-0 button-sidebar">Grades</h6></Link>
                                     </div>
                                 </div>
                             </div>
@@ -238,7 +238,7 @@ function Content() {
                                 <div className="w-100 ms-3">
                                     <div className="d-flex w-100 justify-content-between">
                                     <Link to='/teacher' style={{ textDecoration: 'none', color: 'black', transition: 'color 0.3s' }}>
-                                <h6 className="mb-0" style={{ color: '#009CFF' }}>Contact Teacher</h6>
+                                <h6 className="mb-0 button-sidebar">Contact Teacher</h6>
                             </Link>
                                     </div>
                                 </div>

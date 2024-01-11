@@ -281,6 +281,25 @@
     color: var(--primary);
 }
 
+
+.button-sidebar {
+    color: var(--dark);
+    outline: none;
+}
+
+.button-sidebar:hover,
+.button-sidebar.active {
+    color: var(--primary);
+}
+
+
+
+
+.content .navbar .navbar-nav .nav-link:hover,
+.content .navbar .navbar-nav .nav-link.active {
+    color: var(--primary);
+}
+
 .content .navbar .sidebar-toggler,
 .content .navbar .navbar-nav .nav-link i {
     width: 40px;
@@ -293,7 +312,6 @@
 }
 
 .content .navbar .dropdown-toggle::after {
-    
     border: none;
     content: "\f107";
     font-family: "Font Awesome 5 Free";
